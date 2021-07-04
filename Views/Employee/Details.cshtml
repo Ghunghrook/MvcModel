@@ -1,0 +1,99 @@
+﻿@model MvcModel.Models.Employee
+
+@{
+    ViewBag.Title = "Employee Details";
+}
+    <div style="font-family:Arial">
+
+
+
+        <h2> Employee Details</h2>
+
+        <table>
+            <tr>
+                <td>
+                    Employee ID:
+                </td>
+                <td>
+                    @Model.Id
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    First Name:
+                </td>
+                <td>
+                    @Model.FirstName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Last Name:
+                </td>
+                <td>
+                    @Model.LastName
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Gender:
+                </td>
+                <td>
+                    @Model.Gender
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City:
+                </td>
+                <td>
+                    @Model.Salary
+                </td>
+            </tr>
+        </table>
+
+        @Html.ActionLink("Back to Employee List", "Index", new { DepartmentId = Model.DepartmentId })
+
+    </div>
+
+@*<table class="table">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Salary)
+            </td>
+
+        </tr>
+
+    }
+
+
+</table>*@
+
